@@ -1,1 +1,17 @@
+---
+layout: default
+---
 
+<article class="post">
+  <a href="/" class="back-link">← 返回首页</a>
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">
+    <span class="date">{{ page.date | date: "%Y年%m月%d日" }}</span>
+    {% for tag in page.tags %}
+    <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+</article>

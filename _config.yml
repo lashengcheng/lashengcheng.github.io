@@ -1,1 +1,22 @@
+title: 知识产权观察
+email: lashengcheng@outlook.com
+description: 专注知识产权领域的前沿动态与深度分析
+baseurl: ""
+url: "https://lashengcheng.github.io"
+markdown: kramdown
+highlighter: rouge
+paginate: 8
+paginate_path: "/page:num/"
+permalink: /:year/:month/:title/
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
 
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      author: lashengcheng
